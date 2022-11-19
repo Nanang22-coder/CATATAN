@@ -1,0 +1,76 @@
+
+langkah buat pasword => 
+mysql -u $(whoami)
+use mysql;
+ set password for 'root'@'localhost' = password('1234');]
+flush privileges; 
+quit;
+
+buat user baru =>CREATE USER 'nanang'@'localhost' IDENTIFIED BY '1922';
+
+buka mysql => mysqld_safe -u root 
+                          mysql -u root -p
+
+membuat database => create database nama database ;
+
+memakai database => use nama database ;
+
+membuat tabel structur =>
+ create table mahasiswa ( 
+id int primary key auto_increment, 
+nama varchar (100),
+nrp varchar (9),
+email varchar (100),
+jurusan varchar(100),
+gambar varchar (100)
+ );
+
+menambahkan kolom tabel =>
+ALTER TABLE namatabel ADD namakolom varchar0p (100);
+
+mengubah nama kolom tabel=>
+ALTER TABLE namatable CHANGE namakolomlama namabaru varchar(100);11
+
+
+
+melihat database => show databases ;
+melihat tael => show tables;
+melihat structur => describe mahasiswa ;
+                                   desc mahasiswa;
+memasukan data => insert into mahasiswa values ('', 'nanang','0000001', 'nanangant01@gmail.com', 'otomotif', 'nanang.jpg');
+11111
+melihat data masuk => select * from mahasiswa ;
+melihat data sebagian => select nama, nrp from mahasiswa ;
+melihat berdasarkan nrp => select * from mahasiswa where nrp = '973738668' ;
+
+mengubah data => update mahasiswa set jurusan = 'teknik industri' where id = 2;
+
+menghapus data => delete from mahasiswa where id = 3 ;
+
+menghapus tabel => drop table mahasiswa ;
+
+
+buat user baru =>
+CREATE USER 'nama_user'@'localhost' IDENTIFIED BY 'pasword';
+
+memberi akses penuh => 
+GRANT ALL PRIVILEGES ON * . * TO 'new_user'@'localhost';
+FLUSH PRIVILEGES;
+
+memberikan akses terbatas =>
+GRANT CREATE, SELECT ON * . * TO 'user_name'@'localhost';
+
+CREATE – memperbolehkan user untuk membuat database atau tabel.
+SELECT – memperbolehkan user untuk mengambil data.
+INSERT – memperbolehkan user untuk memodifikasi entri yang ada di tabel.
+DELETE – memperbolehkan user untuk menghapus entri tabel.
+DROP – memperbolehkan user untuk menghapus semua tabel database.
+
+menghaspus user baru mengunakan user root =>
+DROP USER ‘nanang’@‘localhost’;
+
+melihat hak ases user yg baru di buat=>
+SHOW GRANTS FOR 'nanang'@'localhost';
+
+GRANT ALL PRIVILEGES ON * . * TO 'nanang'@'localhost';
+
