@@ -49,6 +49,8 @@ menghapus data => delete from mahasiswa where id = 3 ;
 
 menghapus tabel => drop table mahasiswa ;
 
+menghapus database => 
+ DROP DATABASE mahasiswa
 
 buat user baru =>
 CREATE USER 'nama_user'@'localhost' IDENTIFIED BY 'pasword';
