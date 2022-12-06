@@ -2,9 +2,16 @@ git init   --> untuk mengubah folder menjadi repostory git
 git status --> untuk memeriksa proses perubahan dalam repostory
 gitt add . --> untuk memasukan perubahan kedalam stagging area
 git commit -m "perubahan" --> untuk menulis keterangan perubahan dan memasukan perubahan dalam list GIT
-git log   --> untuk melihat semua proses perubahan commit yg telah terjadi 
+git log   --> untuk melihat semua proses perubahan yg telah terjadi 
 git log -- namafile  --> untuk melihat perubahan hnya di file tersebut
+git log --all --decorate --oneline --graph  --> untuk melihat perubahan secara lengkap
 git checkout 7667b -- namafile --> untuk keluar dalam proses sebelum terjadinya commit dan mengembalikan file tersebut    (7667b = 5 huruf pertama dalam commit)
-
+git rm namafile  --> untuk menghapus file tanpa commit
+git restore namafile --> untuk mengembalikan file terhapus
 tomboll fork dalam git hub --> untuk mengcopy repo orang lain kedalam github kita , dan juga isa untuk pull request perubahanya kepada pemilik repo asli
 
+git branch --> untuk melihat branch yg tersedia 
+git branch namabranch --> untuk membuat branch baru 
+git checkout namabranch --> untuk pindah branch
+
+alias namaperintah="isi perintah" --> untuk menyingkat perintah dalam git
