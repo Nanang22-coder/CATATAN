@@ -15,3 +15,6 @@ git branch namabranch --> untuk membuat branch baru
 git checkout namabranch --> untuk pindah branch
 
 alias namaperintah="isi perintah" --> untuk menyingkat perintah dalam git
+git merge namabranch  --> untuk mengabungkan branch
+git branch --merged  --> untuk mengetahui branh yg sudah di gabung
+git branch -d namabranch  --> untuk menghapus branch
