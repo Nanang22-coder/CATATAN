@@ -1,3 +1,7 @@
+langkah pertama kali membuat user =>
+mysql -u root
+select user from mysql.user;
+CREATE USER 'ant'@'localhost'IDENTIFIED BY '1922';
 
 langkah buat pasword => 
 mysql -u $(whoami)
